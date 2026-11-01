@@ -997,12 +997,12 @@ ul.category-module {
 }
 
 /* ==========================================================================
-   ETF.UNIBL.ORG - Uklanjanje zaobljenosti (Zaobljene samo pojedinačne novosti)
+   ETF.UNIBL.ORG - Uklanjanje zaobljenosti (Sve kvadratno osim kartica novosti)
    ========================================================================== */
 
-/* 1. Potpuno uklanjanje zaobljenosti sa svih modula, banera i okvira */
 .moduletable,
 .moduletable *,
+.moduletable_sidemenu,
 .bannergroup,
 .banneritem,
 .banneritem img,
@@ -1014,13 +1014,17 @@ ul.category-module {
 .fs-sp1-content,
 .fs-sp1-inner,
 .fs-sp1-image,
-.item-page {
+.item-page,
+.breadcrumb,
+table.nastavni_plan,
+table.predmet,
+.item-page table {
     border-radius: 0 !important;
     -webkit-border-radius: 0 !important;
     -moz-border-radius: 0 !important;
 }
 
-/* 2. Zaobljeni uglovi ISKLJUČIVO za pojedinačne kartice novosti */
+/* Zaobljeni uglovi ISKLJUČIVO za pojedinačne kartice novosti */
 .category-module.mod-list > li,
 ul.category-module > li {
     border-radius: 8px !important;
